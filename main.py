@@ -14,6 +14,6 @@ example_data = [
 ]
 for item in example_data:
     data = serialize(item)
-    with open("saved.scp", "a") as f:
+    with open("saved.scp", "a", encoding='utf-8') as f:
         f.write(data + '\n')
     print(deserialize(data))
